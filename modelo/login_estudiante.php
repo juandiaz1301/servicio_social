@@ -94,4 +94,11 @@ ini_set('display_errors','1');
       <input type="email" name="email" id="email" required>
 
       <label for="contraseña">Contraseña:</label>
-      <inp
+      <input type="password" name="contraseña" id="contraseña" required>
+
+      <button type="submit">Ingresar</button>
+    </form>
+    <a href="../index.html" class="back-link">⬅ Volver al inicio</a>
+  </div>
+</body>
+</html>

@@ -14,7 +14,7 @@ ini_set('display_errors','1');
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      background: linear-gradient(to right, #2980b9, #2c3e50); /* Azul para Supervisor */
+      background: linear-gradient(to right, #8e2de2, #4a00e0); /* morado para supervisor */
       color: white;
       display: flex;
       justify-content: center;
@@ -35,7 +35,7 @@ ini_set('display_errors','1');
 
     .login-box h1 {
       margin-bottom: 1.5rem;
-      color: #2980b9;
+      color: #4a00e0;
     }
 
     label {
@@ -56,7 +56,7 @@ ini_set('display_errors','1');
     }
 
     button {
-      background: #2980b9;
+      background: #4a00e0;
       color: white;
       border: none;
       padding: 12px;
@@ -69,14 +69,14 @@ ini_set('display_errors','1');
     }
 
     button:hover {
-      background: #1f618d;
+      background: #2c0bb3;
       transform: scale(1.05);
     }
 
     .back-link {
       display: block;
       margin-top: 1rem;
-      color: #2980b9;
+      color: #4a00e0;
       text-decoration: none;
       font-weight: bold;
     }
@@ -89,4 +89,16 @@ ini_set('display_errors','1');
 <body>
   <div class="login-box">
     <h1>Login Supervisor</h1>
-    <form action="loguearse_supervisor.p_
+    <form action="loguearse_supervisor.php" method="POST">
+      <label for="email">Correo electrónico:</label>
+      <input type="email" name="email" id="email" required>
+
+      <label for="contraseña">Contraseña:</label>
+      <input type="password" name="contraseña" id="contraseña" required>
+
+      <button type="submit">Ingresar</button>
+    </form>
+    <a href="../index.html" class="back-link">⬅ Volver al inicio</a>
+  </div>
+</body>
+</html>

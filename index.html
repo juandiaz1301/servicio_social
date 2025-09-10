@@ -3,105 +3,112 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Servicio Social - Inicio</title>
+  <title>Servicio Social Estudiantil</title>
 
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: linear-gradient(to right, #3498db, #9b59b6); /* azul-morado */
-      color: white;
-      text-align: center;
-    }
+  <!-- Fuentes -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Exo+2:wght@400;600&display=swap" rel="stylesheet">
 
-    header {
-      background: rgba(0,0,0,0.7);
-      padding: 2rem 1rem;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-      color: #f1c40f; /* amarillo */
-    }
-
-    .intro {
-      padding: 3rem 1rem;
-    }
-
-    .intro p {
-      max-width: 700px;
-      margin: auto;
-      font-size: 1.2rem;
-    }
-
-    .roles {
-      background: white;
-      color: #2c3e50;
-      margin: 2rem auto;
-      padding: 2rem;
-      border-radius: 12px;
-      max-width: 800px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    }
-
-    .roles h2 {
-      margin-bottom: 1.5rem;
-    }
-
-    .buttons {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 15px;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 12px 25px;
-      background: #e74c3c; /* rojo */
-      color: white;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-
-    .btn:hover {
-      background: #c0392b;
-      transform: scale(1.05);
-    }
-
-    footer {
-      background: rgba(0,0,0,0.8);
-      padding: 1rem;
-      margin-top: 2rem;
-    }
-  </style>
+  <!-- Estilos -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Servicio Social</h1>
-  </header>
+  <!-- Encabezado con escudo + botones futuristas -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <!-- Escudo del colegio -->
+      <img src="img/escudoColegio_bordeBlanco (1).png" alt="Escudo Colegio San José de Guanentá" class="logo">
 
-  <main>
-    <section class="intro">
-      <h2>Bienvenido al Proyecto de Servicio Social</h2>
+  <!-- Escudo en la derecha -->
+  <div class="contact-logo">
+    <img src="img/logoSistemas.png" alt="Escudo Colegio San José de Guanentá" width="50" height="60">
+    </div>
+
+
+      <!-- Menú -->
+      <ul>
+        <li><a href="#inicio" class="nav-btn">HOME</a></li>
+        <li><a href="#problema" class="nav-btn">PROBLEMA</a></li>
+        <li><a href="#funcionalidades" class="nav-btn">FUNCIONALIDADES</a></li>
+        <li><a href="#beneficios" class="nav-btn">BENEFICIOS</a></li>
+        <li><a href="#contacto" class="nav-btn">CONTACTO</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Portada -->
+  <section id="inicio" class="hero">
+    <div class="hero-content">
+      <h1 class="glitch" data-text="SERVICIO SOCIAL">SERVICIO SOCIAL</h1>
+      <p class="subtitle">Colegio San José de Guanentá</p>
+    </div>
+  </section>
+
+  <!-- Problema -->
+  <section id="problema">
+    <h2 class="section-title">PLANTEAMIENTO DEL PROBLEMA</h2>
+    <div class="content-box">
       <p>
+        El sistema actual de gestión del servicio social en el colegio presenta múltiples dificultades:
+        desorganización, dependencia de un solo encargado y manejo en papel, lo que genera pérdida de horas,
+        falsificación y mala experiencia para estudiantes y acudientes.
       </p>
-    </section>
+      <ul>
+        <li><strong>Causas:</strong> procesos manuales, mala organización, poco tiempo de atención.</li>
+        <li><strong>Consecuencias:</strong> retrasos, reclamos, riesgo de fraude y pérdida de información.</li>
+      </ul>
+    </div>
+  </section>
 
-    <section class="roles">
-      <h2>Acceso rápido</h2>
-      <div class="buttons">
-        <a href="modelo/login_admin.php" class="btn">Administrador</a>
-        <a href="modelo/login_acudiente.php" class="btn">Acudiente</a>
-        <a href="modelo/login_estudiante.php" class="btn">Estudiante</a>
-        <a href="modelo/login_supervisor.php" class="btn">Supervisor</a>
+  <!-- Funcionalidades -->
+  <section id="funcionalidades">
+    <h2 class="section-title">FUNCIONALIDADES DEL SITIO WEB</h2>
+    <div class="cards">
+      <div class="card">Inicio de sesión para estudiantes, acudientes, supervisor y administrador.</div>
+      <div class="card">Registro y validación de horas de servicio social.</div>
+      <div class="card">Impresión de certificados de cumplimiento.</div>
+      <div class="card">Mejor comunicación entre la comunidad educativa.</div>
+    </div>
+  </section>
+
+  <!-- Beneficios -->
+  <section id="beneficios">
+    <h2 class="section-title">BENEFICIOS</h2>
+    <div class="cards">
+      <div class="card">✅ Organización y transparencia en la gestión.</div>
+      <div class="card">✅ Reducción de riesgos de pérdida de información.</div>
+      <div class="card">✅ Mayor facilidad para estudiantes y acudientes.</div>
+      <div class="card">✅ Mejor control y eficiencia para el supervisor.</div>
+    </div>
+  </section>
+
+  <!-- Acceso rápido -->
+  <section id="acceso">
+    <h2 class="section-title">ACCESO RÁPIDO</h2>
+    <div class="access-buttons">
+      <a href="modelo/login_admin.php" class="role-btn admin">Administrador</a>
+      <a href="modelo/login_acudiente.php" class="role-btn acudiente">Acudiente</a>
+      <a href="modelo/login_estudiante.php" class="role-btn estudiante">Estudiante</a>
+      <a href="modelo/login_supervisor.php" class="role-btn supervisor">Supervisor</a>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto">
+    <h2 class="section-title">CONTACTO</h2>
+    <div class="contact-container">
+      <!-- Texto -->
+      <div class="content-box">
+        <p>
+          Proyecto académico - Servicio Social Estudiantil.<br>
+          Colegio San José de Guanentá - 2025.
+        </p>
+        <p>Email: contacto@serviciosocial.com</p>
       </div>
-    </section>
-  </main>
 
 
+  <!-- Footer -->
+  <footer>
+    <p></p>
+  </footer>
 </body>
 </html>
